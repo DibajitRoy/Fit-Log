@@ -3,10 +3,10 @@
 import EmptyState from "@/components/myPlan/EmptyState";
 import MetricsSummary from "@/components/myPlan/MetricsSummary";
 import PlanWorkoutCard from "@/components/myPlan/PlanWorkoutCard";
+import SortDropdown from "@/components/myPlan/SortDropdown";
 import { PlanContext } from "@/context/PlanContext";
 import { IWorkout } from "@/types/workout.type";
 import { useContext, useEffect, useState } from "react";
-import { FaChevronDown } from "react-icons/fa";
 import { toast } from "react-toastify";
 
 type SortKey = "duration" | "caloriesBurned" | "rating";
@@ -87,19 +87,7 @@ const MyPlanPage = () => {
           </button>
         </div>
 
-        <label className="flex items-center gap-2 text-sm text-white/60">
-          Sort By
-          <select
-            value={sortBy}
-            onChange={(e) => setSortBy(e.target.value as SortKey)}
-            className="select select-sm rounded-full border-white/20 bg-transparent text-white"
-          >
-            <option value="duration">Duration</option>
-            <option value="caloriesBurned">Calories</option>
-            <option value="rating">Rating</option>
-          </select>
-          <FaChevronDown className="text-xs" />
-        </label>
+        <SortDropdown sortBy={sortBy} onChange={setSortBy} />
       </div>
 
       <div className="mt-6 space-y-4">

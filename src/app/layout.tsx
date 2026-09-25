@@ -30,7 +30,7 @@ export default function RootLayout({
       data-theme="black"
       className={`${oswald.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-black text-white">
+      <body className="flex min-h-full w-full flex-col overflow-x-hidden bg-black text-white">
         <PlanProvider>
           <Navbar />
           <main className="flex-1">{children}</main>
