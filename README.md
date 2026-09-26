@@ -2,6 +2,12 @@
 
 FitLog is a dark, no-nonsense gym companion built with Next.js. Pick a lift, lock it into today's plan, and watch the week's work add up.
 
+## Live Link
+https://fitlogworkout.vercel.app/
+
+## GitHub Repo Link
+https://github.com/DibajitRoy/Fit-Log
+
 ## Technologies Used
 - Next.js (App Router)
 - TypeScript
