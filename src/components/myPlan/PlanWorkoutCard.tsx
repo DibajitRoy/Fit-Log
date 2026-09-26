@@ -58,7 +58,7 @@ const PlanWorkoutCard = ({
             onClick={onMarkAsDone}
             className="btn btn-sm flex flex-1 items-center justify-center gap-1 rounded-full border-0 bg-[#ccff00] text-black hover:bg-[#b8e600] sm:flex-none"
           >
-            <FaCheck /> Done
+            <FaCheck /> Mark as Done
           </button>
         )}
 
